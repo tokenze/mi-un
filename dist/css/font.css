@@ -1,0 +1,7 @@
+@font-face {
+  font-family: dejavu;
+  src: url(../fonts/bpg_gel_excelsior.woff2) format("woff2"),
+    url(../fonts/bpg_gel_excelsior.woff) format("woff");
+  unicode-range: U+10d0-10f0;
+  font-display: swap;
+}
