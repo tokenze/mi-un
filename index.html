@@ -4,338 +4,147 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Welcome to Universal Management Systems</title>
-    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
     <link rel="stylesheet" href="dist/css/adminlte.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+  <body class="layout-top-nav">
     <div class="wrapper">
       <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-        <!-- Left navbar links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
-              ><i class="fas fa-bars"></i
-            ></a>
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="index.html" class="nav-link">მთავარი</a>
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="ums_pages/404.html" class="nav-link">კონტაქტი</a>
-          </li>
-        </ul>
+      <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+        <div class="container">
+          <a href="#" class="navbar-brand brand-text">
+            <span class="my-red">U</span>MS
+          </a>
 
-        <!-- SEARCH FORM -->
-        <form class="form-inline ml-3">
-          <div class="input-group input-group-sm">
-            <input
-              class="form-control form-control-navbar"
-              type="search"
-              placeholder="ძიება"
-              aria-label="Search"
-            />
-            <div class="input-group-append">
-              <button class="btn btn-navbar" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
+          <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="./ums_pages/projects.html" class="nav-link">კომპანიები</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">სტატისტიკა</a>
+                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">Some action </a></li>
+                  <li><a href="#" class="dropdown-item">Some other action</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-0 ml-md-3">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
-        </form>
 
-        <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              data-widget="control-sidebar"
-              data-slide="true"
-              href="#"
-              role="button"
-              ><i class="fas fa-user"></i> შესვლა</a
-            >
-          </li>
-        </ul>
+          <!-- right nav -->
+          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./ums_pages/login.html" role="button">შესვლა <i class="fas fa-sign-in-alt"></i></a>
+            </li>
+          </ul>
+          <!-- end right nav -->
+
+
+        </div>
       </nav>
       <!-- /.navbar -->
 
-      <!-- Main Sidebar Container -->
-      <aside class="main-sidebar elevation-4 sidebar-dark-primary">
-        <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
-          <img
-            src="./dist/img/AdminLTELogo.png"
-            alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
-          />
-          <span class="brand-text font-weight-light">UMS</span>
-        </a>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul
-              class="nav nav-pills nav-sidebar flex-column text-sm nav-child-indent"
-              data-widget="treeview"
-              role="menu"
-              data-accordion="false"
-            >
-              <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-building"></i>
-                  <p>
-                    სამუშაო გარემო
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>დაგეგმილი</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>მიმდინარე</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>დასრულებული</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="ums_pages/projects.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    პროექტები
-                  </p>
-                  <span class="right badge badge-info p-1">ნახე</span>
-                </a>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-calendar-day"></i>
-                  <p>
-                    ვადები
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>ვადა იწურება</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>შესრულების გარანტია</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>ავანსის გარანტია</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>რეზერვის გარანტია</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>დაზღვევა</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>სამუშაოების დასრულება</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-money-check"></i>
-                  <p>
-                    ანგარიშები
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>ბიუჯეტი/შესრულება</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>ბიუჯეტის გეგმა</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Misdoc Audit</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>BI Audit</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Gov.ge</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Oris Pays</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Contract Num Check</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>გადახდები</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>ცვლილებების ანგარიში</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Supervisor Users</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>კონტრაქტორის შეფასება</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-chart-pie"></i>
-                  <p>
-                    სტატისტიკა
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>სტატუსები</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>გადახდების ანგარიში</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>ღირებულება</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>პროექტების რაოდენობა</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>შესრულება</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-toolbox"></i>
-                  <p>
-                    პარამეტრები
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="ums_pages/404.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Week Suprevisors</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="ums_pages/404.html" class="nav-link">
-                  <i class="nav-icon fas fa-map-marker-alt"></i>
-                  <p>
-                    რუკა
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="ums_pages/404.html" class="nav-link">
-                  <i class="nav-icon fas fa-user-friends"></i>
-                  <p>
-                    პასუხისმგებელი პირები
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /.sidebar-menu -->
-        </div>
-        <!-- /.sidebar -->
-      </aside>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- /.content-header -->
-        <section class="content">
-          <div class="container-fluid"></div>
-        </section>
+
+
+        <div class="jumbotron">
+          <div class="container">
+            <!-- <p class="lead"><b>Welcome to</b></p> -->
+            <h3 class="display-5 mb-4 text-muted"><span class="text-danger">უნივერსალური</span> მართვის სისტემა</h3>
+            <hr class="my-4">
+            <p class="lead font-weight-bold text-muted">✨</p>
+          </div>
+        </div>
+
+
+        <div class="content">
+          <h3 class="display-5 text-muted text-center my-5">პროექტები</h3>
+          <div class="container">
+            <div class="row">
+              <!-- /.col -->
+              <div class="col-md-3 col-sm-6 col-12">
+                <a href="./ums_pages/projects.html" class="text-dark">
+                  <div class="info-box">
+                    <span class="info-box-icon bg-info"><i class="fas fa-pencil-ruler"></i></span>
+
+                    <div class="info-box-content">
+                      <span class="info-box-text text-muted">დაგეგმილი</span>
+                      <span class="info-box-number">13</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                </a>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+              <div class="col-md-3 col-sm-6 col-12">
+
+                <a href="./ums_pages/projects.html" class="text-dark">
+                  <div class="info-box">
+                    <span class="info-box-icon bg-primary"><i class="fas fa-star-half-alt"></i></span>
+
+                    <div class="info-box-content">
+                      <span class="info-box-text text-muted">მიმდინარე</span>
+                      <span class="info-box-number">14</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                </a>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+              <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                  <span class="info-box-icon bg-success"><i class="fas fa-star"></i></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text text-muted">დასრულებული</span>
+                    <span class="info-box-number">41</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box ">
+                  <span class="info-box-icon bg-warning"><i class="fas fa-th "></i></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text text-muted">სულ</span>
+                    <span class="info-box-number">68</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.content-wrapper -->
     </div>

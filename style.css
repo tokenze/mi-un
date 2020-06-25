@@ -12,6 +12,10 @@ body {
     "Segoe UI Symbol";
 }
 
+.my-red {
+  color: #d84315;
+}
+
 .project-card {
   font-size: 0.85rem;
 }
