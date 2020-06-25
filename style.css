@@ -12,6 +12,10 @@ body {
     "Segoe UI Symbol";
 }
 
+.my-red {
+  color: indianred;
+}
+
 .project-card {
   font-size: 0.85rem;
 }
@@ -67,3 +71,11 @@ td {
 }
 
 /* details page end */
+
+/* login, register forms */
+.login-box,
+.register-box {
+  width: 360px;
+  margin-top: -6rem;
+}
+/* login, register forms */
