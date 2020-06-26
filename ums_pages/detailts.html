@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>UMS | Project Detailts</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../index.html" class="nav-link">მთავარი</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="ums_pages/404.html" class="nav-link">კონტაქტი</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="ძიება" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
+            class="fas fa-th-large"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar elevation-4 sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <a href="../index.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">UMS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column text-sm nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-building"></i>
+              <p>
+                სამუშაო გარემო
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>დაგეგმილი</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>მიმდინარე</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>დასრულებული</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="./projects.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                პროექტები
+              </p>
+              <span class="right badge badge-info p-1">ნახე</span>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-calendar-day"></i>
+              <p>
+                ვადები
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ვადა იწურება</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>შესრულების გარანტია</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ავანსის გარანტია</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>რეზერვის გარანტია</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>დაზღვევა</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>სამუშაოების დასრულება</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-check"></i>
+              <p>
+                ანგარიშები
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ბიუჯეტი/შესრულება</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ბიუჯეტის გეგმა</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Misdoc Audit</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>BI Audit</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gov.ge</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Oris Pays</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Contract Num Check</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>გადახდები</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ცვლილებების ანგარიში</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Supervisor Users</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>კონტრაქტორის შეფასება</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                სტატისტიკა
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>სტატუსები</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>გადახდების ანგარიში</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ღირებულება</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>პროექტების რაოდენობა</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>შესრულება</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-toolbox"></i>
+              <p>
+                პარამეტრები
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ums_pages/404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Week Suprevisors</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="ums_pages/404.html" class="nav-link">
+              <i class="nav-icon fas fa-map-marker-alt"></i>
+              <p>
+                რუკა
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="ums_pages/404.html" class="nav-link">
+              <i class="nav-icon fas fa-user-friends"></i>
+              <p>
+                პასუხისმგებელი პირები
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-lg-10 mx-auto">
+            <h3 class="m-0 text-dark">ბარათი [0301-0076]</h3>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+        <div class="row my-3">
+          <div class="card col-lg-10 mx-auto">
+            <div class="card-body">
+              <h4 class="card-text display-5 mb-2">კონტრაქტორი: შპს "ჯეო გრუპი"</h4>
+              <hr>
+              <p class="card-text text-danger font-weight-bold">EIB/MIMP/W/NCB/87-2-2019</p>
+              <hr>
+              <p class="card-text"><span class="some-text">განცხადების ნომერი:</span> <b>DEP190000075</b></p>
+              <hr>
+              <a href="" class="card-link">ტენდერის ბმული</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="table-responsive-xl">
+              <table class="table bg-white">
+                <caption style="caption-side: top;"><span class="caption-title">ღირებულება</span></caption>
+                <thead>
+                  <tr>
+                    <th>საწყისი ღირებულება</th>
+                    <th>ცვლილება</th>
+                    <th>საბოლოო ღირებულება</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12 867 938</td>
+                    <td>-</td>
+                    <td>12 867 938</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive-xl">
+              <table class="table bg-white">
+                <caption style="caption-side: top;"><span class="caption-title">თარიღი</span></caption>
+                <thead>
+                  <tr>
+                    <th>დაიწყო</th>
+                    <th>დასრულდა</th>
+                    <th>კონტრაქტის ვადა</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12.10.2019</td>
+                    <td>12.10.2019</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive-xl">
+              <table class="table bg-white">
+                <caption style="caption-side: top;"><span class="caption-title">ფაქტიური სამუშაოები</span></caption>
+                <thead>
+                  <tr>
+                    <th>დაიწყო</th>
+                    <th>დასრულდა</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10.05.2018</td>
+                    <td>16.01.2020</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive-xl">
+              <table class="table table bg-white">
+                <caption style="caption-side: top;"><span class="caption-title">მიღება-ჩაბარება</span></caption>
+                <thead>
+                  <tr>
+                    <th>მიღება</th>
+                    <th>ჩაბარება</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>16.01.2020</td>
+                    <td>16.01.2020</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <table class="table bg-white col-sm-6">
+              <caption style="caption-side: top;"><span class="caption-title">სხვა დეტალები</span></caption>
+              <thead>
+                <tr>
+                  <th>სახაზინო კოდი</th>
+                  <td>250305</td>
+
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>შესრულება</th>
+                  <td>3 228 263</td>
+                </tr>
+                <tr>
+                  <th>გადახდა</th>
+                  <td>3 228 263</td>
+                </tr>
+                <tr>
+                  <th>ავანსი სულ</th>
+                  <td>3 228 263</td>
+                </tr>
+                <tr>
+                  <th>დასაქვითი</th>
+                  <td>3 228 263</td>
+                </tr>
+                <tr>
+                  <th>რეზერვი სულ</th>
+                  <td>3 228 263</td>
+                </tr>
+                <tr>
+                  <th>გადასახდელი</th>
+                  <td>3 228 263</td>
+                </tr>
+                <tr>
+                  <th>ჯარიმა</th>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row py-5">
+          <div class="col-lg-10 mx-auto">
+
+          <div class="card card-primary card-outline card-outline-tabs">
+            <div class="card-header p-0 pt-1 border-bottom-0">
+              <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="false">გადახდები</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">გადახდები წლების მიხედვით</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="custom-tabs-three-messages-tab" data-toggle="pill" href="#custom-tabs-three-messages" role="tab" aria-controls="custom-tabs-three-messages" aria-selected="true">ღირებულების ცვლილება</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-three-settings-tab" data-toggle="pill" href="#custom-tabs-three-settings" role="tab" aria-controls="custom-tabs-three-settings" aria-selected="false">პროექტის აქწერა</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-three-another-tab" data-toggle="pill" href="#custom-tabs-three-another" role="tab" aria-controls="custom-tabs-three-another" aria-selected="false">გარანტიები</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="custom-tabs-three-evenmore-tab" data-toggle="pill" href="#custom-tabs-three-evenmore" role="tab" aria-controls="custom-tabs-three-evenmore" aria-selected="false">პასუხისმგებელი</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="custom-tabs-three-tabContent">
+                <div class="tab-pane fade" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada lacus ullamcorper dui molestie, sit amet congue quam finibus. Etiam ultricies nunc non magna feugiat commodo. Etiam odio magna, mollis auctor felis vitae, ullamcorper ornare ligula. Proin pellentesque tincidunt nisi, vitae ullamcorper felis aliquam id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id orci eu lectus blandit suscipit. Phasellus porta, ante et varius ornare, sem enim sollicitudin eros, at commodo leo est vitae lacus. Etiam ut porta sem. Proin porttitor porta nisl, id tempor risus rhoncus quis. In in quam a nibh cursus pulvinar non consequat neque. Mauris lacus elit, condimentum ac condimentum at, semper vitae lectus. Cras lacinia erat eget sapien porta consectetur.
+                </div>
+                <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+                   Mauris tincidunt mi at erat gravida, eget tristique urna bibendum. Mauris pharetra purus ut ligula tempor, et vulputate metus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas sollicitudin, nisi a luctus interdum, nisl ligula placerat mi, quis posuere purus ligula eu lectus. Donec nunc tellus, elementum sit amet ultricies at, posuere nec nunc. Nunc euismod pellentesque diam.
+                </div>
+                <div class="tab-pane fade active show" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
+                   Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
+                </div>
+                <div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
+                   Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
+                </div>
+                <div class="tab-pane fade" id="custom-tabs-three-another" role="tabpanel" aria-labelledby="custom-tabs-three-another-tab">
+                   No data yet
+                </div>
+                <div class="tab-pane fade" id="custom-tabs-three-evenmore" role="tabpanel" aria-labelledby="custom-tabs-three-evenmore-tab">
+                  შესყიდვების სამსახური - ეზუგბაია ეკა
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+
+          </div>
+        </div>
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2020 <a href="http://adminlte.io">Mi-Un.Ge</a>.</strong>
+    All rights reserved.
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../dist/js/adminlte.min.js"></script>
+
+</body>
+</html>

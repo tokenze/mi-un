@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>UMS | Projects</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    @media (min-width: 600px) {
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+        grid-column-gap: 1rem ;
+      }
+
+      .project-grid .card-text-label {
+        min-width: 140px;
+      }
+    }
+</style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../index.html" class="nav-link">მთავარი</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="404.html" class="nav-link">კონტაქტი</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="ძიება" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
+            class="fas fa-th-large"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar elevation-4 sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <a href="../index.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">UMS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column text-sm" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-building"></i>
+              <p>
+                სამუშაო გარემო
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>დაგეგმილი</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>მიმდინარე</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>დასრულებული</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="404.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                პროექტები
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-calendar-day"></i>
+              <p>
+                ვადები
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ვადა იწურება</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>შესრულების გარანტია</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ავანსის გარანტია</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>რეზერვის გარანტია</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>დაზღვევა</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>სამუშაოების დასრულება</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-check"></i>
+              <p>
+                ანგარიშები
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ბიუჯეტი/შესრულება</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ბიუჯეტის გეგმა</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Misdoc Audit</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>BI Audit</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gov.ge</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Oris Pays</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Contract Num Check</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>გადახდები</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ცვლილებების ანგარიში</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Supervisor Users</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>კონტრაქტორის შეფასება</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                სტატისტიკა
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>სტატუსები</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>გადახდების ანგარიში</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ღირებულება</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>პროექტების რაოდენობა</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>შესრულება</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-toolbox"></i>
+              <p>
+                პარამეტრები
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Week Suprevisors</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="404.html" class="nav-link">
+              <i class="nav-icon fas fa-map-marker-alt"></i>
+              <p>
+                რუკა
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="404.html" class="nav-link">
+              <i class="nav-icon fas fa-user-friends"></i>
+              <p>
+                პასუხისმგებელი პირები
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>პროექტები</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../index.html">მთავარი</a></li>
+              <li class="breadcrumb-item active">პროექტები</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content-header -->
+    <section class="content">
+      <div class="card bg-dark">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">წარმოსახვითი ფილტრი</h3>
+            <div>
+              <button type="button" class="btn btn-default btn-sm btn-grid-widget">Grid <i class="fas fa-th"></i></button>
+              <button type="button" class="btn btn-default btn-sm btn-list-widget">List <i class="fas fa-list"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div id="grid-container" class="container-fluid project-grid">
+
+        <div class="card project-card">
+          <div class="card-body">
+            <div class="card-text"><span class="card-text-label">დასახელება:</span>მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+            <div class="card-text"><span class="card-text-label">მდებარეობა:</span>მცხეთა-მთიანეთი, მცხეთა</div>
+            <div class="card-text"><span class="card-text-label">ტიპი:</span> გზები, მშენებლობა</div>
+            <div class="card-text"><span class="card-text-label">დაწყება/დასასრული:</span> 31.10.2018 - 31.10.2020</div>
+
+            <div class="card-text"><span class="card-text-label">პროგრამა:</span>WB</div>
+            <div class="card-text"><span class="card-text-label">დონორი:</span> RDP-III</div>
+            <div class="card-text"><span class="card-text-label">სტატუსი:</span> დასრულებული</div>
+            <div class="card-text"><span class="card-text-label"></span><a href="./detailts.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="card-body">
+            <div class="card-text"><span class="card-text-label">დასახელება:</span>საოფისე ავეჯის შესყიდვა (ჯეოსტილი)</div>
+            <div class="card-text"><span class="card-text-label">მდებარეობა:</span>ქ. თბილისი, თბილისი</div>
+            <div class="card-text"><span class="card-text-label">ტიპი:</span> გზები, მშენებლობა</div>
+            <div class="card-text"><span class="card-text-label">დაწყება/დასასრული:</span> 31.10.2018 - 31.10.2020</div>
+
+            <div class="card-text"><span class="card-text-label">პროგრამა:</span>ADB</div>
+            <div class="card-text"><span class="card-text-label">დონორი:</span> SUTIP1</div>
+            <div class="card-text"><span class="card-text-label">სტატუსი:</span> დასრულებული</div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="card-body">
+            <div class="card-text"><span class="card-text-label">დასახელება:</span>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</div>
+            <div class="card-text"><span class="card-text-label">მდებარეობა:</span>სამეგრელო-ზემო სვანეთი, ხობი</div>
+            <div class="card-text"><span class="card-text-label">ტიპი:</span> გზები, პროექტირება</div>
+            <div class="card-text"><span class="card-text-label">დაწყება/დასასრული:</span> 31.10.2018 - 31.10.2020</div>
+
+            <div class="card-text"><span class="card-text-label">პროგრამა:</span>GDG</div>
+            <div class="card-text"><span class="card-text-label">დონორი:</span> GOV-250301</div>
+            <div class="card-text"><span class="card-text-label">სტატუსი:</span> დასრულებული</div>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <div class="card-text"><span class="card-text-label">დასახელება:</span>IP ტელევიზიის მომსახურების შესყიდვის ხელშეკრულება</div>
+            <div class="card-text"><span class="card-text-label">მდებარეობა:</span>ქ. თბილისი, თბილისი</div>
+            <div class="card-text"><span class="card-text-label">ტიპი:</span> სხვა, კონსულტაცია</div>
+            <div class="card-text"><span class="card-text-label">დაწყება/დასასრული:</span> 31.10.2018 - 31.10.2020</div>
+
+            <div class="card-text"><span class="card-text-label">პროგრამა:</span> FGR</div>
+            <div class="card-text"><span class="card-text-label">დონორი:</span> GEO GOV</div>
+            <div class="card-text"><span class="card-text-label">სტატუსი:</span> დასრულებული</div>
+
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <div class="card-text"><span class="card-text-label">დასახელება:</span>მცხეთა-მთიანეთის რეგიონში ბიზნესის დაწყების/განვითარების საკონსულტაციო მომსახურება მცირე და საშუალო მეწარმეებისთვის</div>
+            <div class="card-text"><span class="card-text-label">მდებარეობა:</span>მცხეთა-მთიანეთი, მცხეთა</div>
+            <div class="card-text"><span class="card-text-label">ტიპი:</span> გზები, მშენებლობა</div>
+            <div class="card-text"><span class="card-text-label">დაწყება/დასასრული:</span> 31.10.2018 - 31.10.2020</div>
+
+            <div class="card-text"><span class="card-text-label">პროგრამა:</span>EIB</div>
+            <div class="card-text"><span class="card-text-label">დონორი:</span> GURAD</div>
+            <div class="card-text"><span class="card-text-label">სტატუსი:</span> დასრულებული</div>
+          </div>
+        </div>
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2020 <a href="http://adminlte.io">Mi-Un.Ge</a>.</strong>
+    All rights reserved.
+
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+<script src="../dist/js/adminlte.min.js"></script>
+<script>
+  var container = document.getElementById("grid-container")
+  var listBtn = document.querySelector(".btn-list-widget")
+  var gridBtn = document.querySelector(".btn-grid-widget")
+
+  function setGrid() {
+    container.classList.add("project-grid")
+  }
+  function setList() {
+    container.classList.remove("project-grid")
+  }
+
+  listBtn.addEventListener("click", setList)
+  gridBtn.addEventListener("click", setGrid)
+</script>
+</body>
+</html>
